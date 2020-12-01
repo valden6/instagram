@@ -1,0 +1,10 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "name": "Instagram",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
