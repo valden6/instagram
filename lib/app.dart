@@ -18,7 +18,6 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
       body: [
         HomeScreen(),
         SearchScreen(),

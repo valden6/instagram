@@ -15,7 +15,7 @@ class _InstagramAppState extends State<InstagramApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      color: Colors.black,
+      theme: ThemeData(fontFamily: "SF", backgroundColor: Colors.black),
       home: App()
     );
   }
