@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram/screens/accountScreen.dart';
 import 'package:instagram/screens/homeScreen.dart';
 import 'package:instagram/screens/searchScreen.dart';
@@ -17,6 +18,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: [
         HomeScreen(),
         SearchScreen(),
@@ -25,7 +27,8 @@ class _AppState extends State<App> {
         AccountScreen(),
       ].elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
-        iconSize: 20,
+        type: BottomNavigationBarType.fixed,
+        iconSize: 22,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         backgroundColor: Colors.black,
@@ -37,23 +40,23 @@ class _AppState extends State<App> {
           BottomNavigationBarItem(
             label: "Home",
             backgroundColor: Colors.black,
-            icon: Icon(Icons.home)
+            icon: FaIcon(FontAwesomeIcons.home)
           ),
           BottomNavigationBarItem(
             label: "Search",
-            icon: Icon(Icons.search)
+            icon: FaIcon(FontAwesomeIcons.search)
           ),
           BottomNavigationBarItem(
             label: "Video",
-            icon: Icon(Icons.video_collection)
+            icon: FaIcon(FontAwesomeIcons.video)
           ),
           BottomNavigationBarItem(
             label: "Shop",
-            icon: Icon(Icons.shopping_bag)
+            icon: FaIcon(FontAwesomeIcons.shoppingBag)
           ),
           BottomNavigationBarItem(
             label: "Account",
-            icon: Icon(Icons.account_circle)
+            icon: FaIcon(FontAwesomeIcons.userCircle)
           )
         ]
       )
