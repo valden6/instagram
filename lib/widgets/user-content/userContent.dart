@@ -5,7 +5,7 @@ class UserContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      child: Image.asset("assets/brooklyn.jpg")
+      child: Image.asset("assets/post-content.jpg")
     );
   }
 }
