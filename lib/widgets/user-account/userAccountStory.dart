@@ -6,17 +6,17 @@ class UserAccountStory extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: 100,
+      height: 90,
       child: Row(
         children: [
           Expanded(
             child: ListView.builder(
-              itemCount: 4,
+              itemCount: 5,
               physics: BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
               itemBuilder: (BuildContext context, int index) {
 
-                if (index == 3){
+                if (index == 4){
                   return Container(
                     child: Column(
                       children: [
@@ -24,10 +24,10 @@ class UserAccountStory extends StatelessWidget {
                           child: FlatButton(
                             onPressed: () {},
                             shape: CircleBorder(
-                              side: BorderSide(color: Colors.white, width: 0.5)
+                              side: BorderSide(color: Colors.grey, width: 0.5)
                             ),
                             child: CircleAvatar(
-                              radius: 35,
+                              radius: 30,
                               backgroundColor: Colors.transparent,
                               child: FaIcon(FontAwesomeIcons.plus, color: Colors.white)
                             ),
@@ -47,10 +47,10 @@ class UserAccountStory extends StatelessWidget {
                         child: FlatButton(
                           onPressed: () {},
                           shape: CircleBorder(
-                            side: BorderSide(color: Colors.white)
+                            side: BorderSide(color: Colors.grey)
                           ),
                           child: CircleAvatar(
-                            radius: 35,
+                            radius: 30,
                             backgroundImage: AssetImage("assets/pin-story.jpg")
                           ),
                         )

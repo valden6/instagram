@@ -3,6 +3,9 @@ An application with the 2020 dark mode design of the famous instagram app.
 
 ## Version
 
+### [1.3.0] 
+Adding search page + account page minor bugfix + lock orientation in portrait mode
+
 ### [1.2.0] 
 Adding account page
 

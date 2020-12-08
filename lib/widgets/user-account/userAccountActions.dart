@@ -13,7 +13,7 @@ class UserAccountActions extends StatelessWidget {
               color: Colors.black,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
-                side: BorderSide(color: Colors.white)
+                side: BorderSide(color: Colors.grey)
               ),
               child: Text("Edit Profile", style: TextStyle(color: Colors.white,fontSize: 16, fontWeight: FontWeight.bold))
             )
@@ -25,7 +25,7 @@ class UserAccountActions extends StatelessWidget {
               color: Colors.black,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
-                side: BorderSide(color: Colors.white)
+                side: BorderSide(color: Colors.grey)
               ),
               child: Text("Promotions", style: TextStyle(color: Colors.white,fontSize: 16, fontWeight: FontWeight.bold))
             )
@@ -37,7 +37,7 @@ class UserAccountActions extends StatelessWidget {
               color: Colors.black,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
-                side: BorderSide(color: Colors.white)
+                side: BorderSide(color: Colors.grey)
               ),
               child: Text("Insights", style: TextStyle(color: Colors.white,fontSize: 16, fontWeight: FontWeight.bold))
             )

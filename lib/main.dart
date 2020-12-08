@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:instagram/app.dart';
 
 void main() {
@@ -11,6 +12,16 @@ class InstagramApp extends StatefulWidget {
 }
 
 class _InstagramAppState extends State<InstagramApp> {
+
+  @override
+  void initState(){
+    super.initState();
+    SystemChrome.setPreferredOrientations([
+        DeviceOrientation.portraitDown,
+        DeviceOrientation.portraitUp
+    ]);
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
