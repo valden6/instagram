@@ -17,9 +17,12 @@ class SearchScreen extends StatelessWidget {
               return [
                 SliverList(
                     delegate: SliverChildListDelegate([
-                  SearchBar(),
-                  Padding(padding: EdgeInsets.only(top: 8)),
-                ]))
+                      Padding(padding: EdgeInsets.only(top: 8)),
+                      SearchBar(),
+                      Padding(padding: EdgeInsets.only(top: 8))
+                    ]
+                  )
+                )
               ];
             },
             body: Container(

@@ -20,7 +20,7 @@ class SearchBar extends StatelessWidget {
               child: TextField(
                 textAlignVertical: TextAlignVertical.center,
                 style: TextStyle(color: Colors.white),
-                cursorColor: Colors.white.withOpacity(0.3),
+                cursorColor: Colors.grey,
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.all(10.0),
                   prefixIconConstraints: BoxConstraints(minWidth: 30),

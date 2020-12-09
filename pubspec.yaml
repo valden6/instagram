@@ -55,6 +55,9 @@ flutter:
     - assets/logo-white.png
     - assets/post-content.jpg
     - assets/search-content.jpg
+    - assets/shop-category.jpg
+    - assets/shop-logo.jpg
+    - assets/shop-merch.jpg
     - assets/igtv-post.jpg
     - assets/reel-post.jpg
     - assets/identified-post.jpg

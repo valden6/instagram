@@ -17,14 +17,9 @@ class _AccountScreenState extends State<AccountScreen> {
       // Persistent AppBar that never scrolls
       backgroundColor: Colors.black,
       appBar: AppBar(
+        centerTitle: false,
         backgroundColor: Colors.black,
-        title: Container(
-          width: MediaQuery.of(context).size.width/3 * 2,
-          child: Padding(
-            padding: EdgeInsets.only(left:5),
-            child: Text("EricMatt", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
-          )
-        ),
+        title: Text("EricMatt", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
         actions: [
           IconButton(
             onPressed: () {},
