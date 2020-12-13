@@ -11,7 +11,7 @@ import 'package:instagram/widgets/user-content/userContentLegend.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIOverlays([]); // Enable fullscreen on Android
+    // SystemChrome.setEnabledSystemUIOverlays([]); // Enable fullscreen on Android
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,

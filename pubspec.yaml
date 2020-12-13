@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   font_awesome_flutter: ^8.10.0
+  video_player: ^1.0.1
   cupertino_icons: ^1.0.0
 
 dev_dependencies:
@@ -60,6 +61,8 @@ flutter:
     - assets/shop-merch.jpg
     - assets/igtv-post.jpg
     - assets/reel-post.jpg
+    - assets/reel-account-icon.jpg
+    - assets/reel-video.mp4
     - assets/identified-post.jpg
     - assets/pin-story.jpg
     - assets/pp.jpg

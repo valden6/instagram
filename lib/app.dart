@@ -4,7 +4,7 @@ import 'package:instagram/screens/accountScreen.dart';
 import 'package:instagram/screens/homeScreen.dart';
 import 'package:instagram/screens/searchScreen.dart';
 import 'package:instagram/screens/shopScreen.dart';
-import 'package:instagram/screens/videoScreen.dart';
+import 'package:instagram/screens/reelScreen.dart';
 
 class App extends StatefulWidget {
   @override
@@ -22,7 +22,7 @@ class _AppState extends State<App> {
       body: [
         HomeScreen(),
         SearchScreen(),
-        VideoScreen(),
+        ReelScreen(),
         ShopScreen(),
         AccountScreen(),
       ].elementAt(_selectedIndex),
