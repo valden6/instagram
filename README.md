@@ -3,6 +3,9 @@ An application with the 2020 dark mode design of the famous instagram app.
 
 ## Version
 
+### [1.6.0] 
+Adding stories in homepage
+
 ### [1.5.0] 
 Adding reel page
 
