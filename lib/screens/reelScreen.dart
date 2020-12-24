@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram/widgets/reelActions.dart';
 import 'package:instagram/widgets/reelContentAccount.dart';
 import 'package:instagram/widgets/reelContentAudio.dart';

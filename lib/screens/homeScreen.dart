@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:instagram/widgets/user-account/userAccountStory.dart';
 import 'package:instagram/widgets/user-content/userContent.dart';
 import 'package:instagram/widgets/user-content/userContentActions.dart';
 import 'package:instagram/widgets/user-content/userContentComment.dart';
