@@ -78,6 +78,10 @@ flutter:
     - assets/pin-story-1.jpg
     - assets/pin-story-2.jpg
     - assets/pp.jpg
+    - assets/friend-1.jpg
+    - assets/friend-2.jpg
+    - assets/stranger-1.jpg
+    - assets/stranger-2.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
