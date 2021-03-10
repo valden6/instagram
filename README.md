@@ -2,6 +2,8 @@
 An application with the 2020 dark mode design of the famous instagram app.
 
 ## Version
+### [1.6.2] 
+Refactoring UI design + Adding new pics
 
 ### [1.6.1] 
 minor bugfix

@@ -18,6 +18,11 @@ class _UserAccountContentIgtvState extends State<UserAccountContentIgtv> {
         itemCount: 4,
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int index) {
+
+          String userImg = (index % 3 == 0) ? "assets/igtv-post-2.jpg" : "assets/igtv-post-1.jpg";
+          String userDesc = (index % 3 == 0) ? "The founder of instagram in conference" : "Beautiful sunset on my beach";
+          String userViews = (index % 3 == 0) ? "252K views" : "502K views";
+         
           return Card(
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
             margin: EdgeInsets.all(4),
@@ -30,7 +35,7 @@ class _UserAccountContentIgtvState extends State<UserAccountContentIgtv> {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         colorFilter: ColorFilter.mode(Colors.grey, BlendMode.darken),
-                        image: AssetImage("assets/igtv-post.jpg"),
+                        image: AssetImage(userImg),
                         fit: BoxFit.fill
                       )
                     )
@@ -43,7 +48,7 @@ class _UserAccountContentIgtvState extends State<UserAccountContentIgtv> {
                   width: 183,
                   child: Container(
                     margin: EdgeInsets.only(left:6, right: 6),
-                    child: Text("Le fondateur d'instagram en conférence", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold))
+                    child: Text(userDesc, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold))
                   )
                 ),
                 Positioned(
@@ -53,7 +58,7 @@ class _UserAccountContentIgtvState extends State<UserAccountContentIgtv> {
                   width: 183,
                   child: Container(
                     margin: EdgeInsets.only(left:6, right: 6),
-                    child: Text("252K views", style: TextStyle(color: Colors.grey[200], fontSize: 10))
+                    child: Text(userViews, style: TextStyle(color: Colors.grey[200], fontSize: 10))
                   )
                 )
               ]    

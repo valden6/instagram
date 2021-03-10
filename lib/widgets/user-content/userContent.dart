@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 
 class UserContent extends StatelessWidget {
+
+  String userPic;
+
+  UserContent({this.userPic});
+
   @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      child: Image.asset("assets/post-content.jpg")
+      child: Image.asset(userPic)
     );
   }
 }

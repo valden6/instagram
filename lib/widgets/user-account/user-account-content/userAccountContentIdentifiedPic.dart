@@ -15,12 +15,15 @@ class _UserAccountContentIdentifiedPicState extends State<UserAccountContentIden
         itemCount: 3,
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int index) {
+
+           String userImg = (index % 3 == 0) ? "assets/identified-post-1.jpg" : "assets/identified-post-2.jpg";
+
           return Card(
             margin: EdgeInsets.all(1),
             color: Colors.transparent,
             child: FittedBox(
-                fit: BoxFit.cover,
-                child: Image.asset("assets/identified-post.jpg")
+                fit: BoxFit.fill,
+                child: Image.asset(userImg)
             )
           );
         }

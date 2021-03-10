@@ -55,18 +55,28 @@ class HomeScreen extends StatelessWidget {
             child: ListView.builder(
               physics: ClampingScrollPhysics(),
               itemBuilder: (BuildContext context, int index) {
+
+                String userPp = (index % 3 == 0) ? "assets/pp.jpg" : "assets/story-content-account-2.jpg";
+                String userName = (index % 3 == 0) ? "EricMatt" : "John Deaux";
+                String userLocation = (index % 3 == 0) ? "Montana" : "Tahiti";
+                String userImg = (index % 3 == 0) ? "assets/post-content-1.jpg" : "assets/post-content-2.jpg";
+                String userImgLegend = (index % 3 == 0) ? "EricMatt Early New York Morning" : "John Deaux Incredible sunrise on the beach";
+                String userfriend1 = (index % 3 == 0) ? "NadineM Incredible country and beautiful landscape and nice pic, i would like to go here if i can" : "EvaMoun Beautiful landscape and nice pic, bring me with u the next time";
+                String userfriend2 = (index % 3 == 0) ? "Boby30 Nice pic bro !!!" : "BryanEhlm Omg i would be here !!! 😍";
+                String userDate = (index % 3 == 0) ? "3 days ago" : "yesterday";
+                
                 return Container(
                   child: Column(
                     children: [
-                      UserContentHeader(),
+                      UserContentHeader(userName: userName, userPp: userPp, userLocation: userLocation),
                       Padding(padding: EdgeInsets.only(bottom: 4)),
-                      UserContent(),
+                      UserContent(userPic: userImg),
                       UserContentActions(),
-                      UserContentLegend(),
+                      UserContentLegend(userPicLegend: userImgLegend),
                       Padding(padding: EdgeInsets.only(bottom: 8)),
-                      UserContentComment(),
+                      UserContentComment(userFriend1: userfriend1,userFriend2: userfriend2),
                       Padding(padding: EdgeInsets.only(bottom: 6)),
-                      UserContentDate(),
+                      UserContentDate(userDate: userDate),
                       Padding(padding: EdgeInsets.only(bottom: 15)),
                     ]
                   )

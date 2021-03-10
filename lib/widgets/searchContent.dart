@@ -16,12 +16,16 @@ class _SearchContentState extends State<SearchContent> {
           itemCount: 16,
           shrinkWrap: true,
           itemBuilder: (BuildContext context, int index) {
-            return Card(
+
+            String content = (index % 3 == 0) ? "assets/search-content-1.jpg" : "assets/search-content-2.jpg";
+                
+            return Container(
               margin: EdgeInsets.all(1),
-              color: Colors.transparent,
-              child: FittedBox(
-                  fit: BoxFit.cover,
-                  child: Image.asset("assets/search-content.jpg")
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage(content)
+                )
               )
             );
           }

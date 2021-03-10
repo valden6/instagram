@@ -19,6 +19,10 @@ class _UserAccountContentReelState extends State<UserAccountContentReel> {
         itemCount: 4,
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int index) {
+
+          String userImg = (index % 3 == 0) ? "assets/reel-post-1.jpg" : "assets/reel-post-2.jpg";
+          String userViews = (index % 3 == 0) ? "10,1k" : "230,6K";
+          
           return Card(
             margin: EdgeInsets.all(1),
             color: Colors.transparent,
@@ -27,7 +31,7 @@ class _UserAccountContentReelState extends State<UserAccountContentReel> {
                 Container(
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/reel-post.jpg"),
+                      image: AssetImage(userImg),
                       fit: BoxFit.fill
                     )
                   )
@@ -45,7 +49,7 @@ class _UserAccountContentReelState extends State<UserAccountContentReel> {
                       ),
                       Container(
                         margin: EdgeInsets.only(left:6, right: 6),
-                        child: Text("10,1k", style: TextStyle(color: Colors.grey[200], fontSize: 11, fontWeight: FontWeight.bold))
+                        child: Text(userViews, style: TextStyle(color: Colors.grey[200], fontSize: 11, fontWeight: FontWeight.bold))
                       )
                     ]
                   )

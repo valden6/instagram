@@ -16,6 +16,9 @@ class UserAccountStory extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemBuilder: (BuildContext context, int index) {
 
+                String userStoryImg = (index % 3 == 0) ? "assets/pin-story-1.jpg" : "assets/pin-story-2.jpg";
+                String userStoryName = (index % 3 == 0) ? "Paris" : "Japan";
+
                 if (index == 4){
                   return Container(
                     child: Column(
@@ -51,12 +54,12 @@ class UserAccountStory extends StatelessWidget {
                           ),
                           child: CircleAvatar(
                             radius: 30,
-                            backgroundImage: AssetImage("assets/pin-story.jpg")
+                            backgroundImage: AssetImage(userStoryImg)
                           ),
                         )
                       ),
                       Padding(padding: EdgeInsets.only(top:4)),
-                      Text("Paris", style: TextStyle(color: Colors.white,fontSize: 16))
+                      Text(userStoryName, style: TextStyle(color: Colors.white,fontSize: 16))
                     ]
                   )
                 );

@@ -15,6 +15,10 @@ class _ShopCategoryState extends State<ShopCategory> {
         physics: BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
+
+          String shopImg = (index % 3 == 0) ? "assets/shop-category.jpg" : "assets/explore-guides.jpg";
+          String shopName = (index % 3 == 0) ? "Shop Collections" : "Explore Guides";
+                
           return Container(
             width: 180,
             padding: EdgeInsets.only(top: 10, left: 10, bottom: 10),
@@ -34,7 +38,7 @@ class _ShopCategoryState extends State<ShopCategory> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         image: DecorationImage(
-                          image: AssetImage("assets/shop-category.jpg"),
+                          image: AssetImage(shopImg),
                           fit: BoxFit.fill
                         )
                       )
@@ -43,7 +47,7 @@ class _ShopCategoryState extends State<ShopCategory> {
                   Padding(padding: EdgeInsets.only(left:8)),
                   Expanded(
                     child: Container(
-                      child: Text("Shop Collections", style: TextStyle(color: Colors.white,fontSize: 14, fontWeight: FontWeight.bold))
+                      child: Text(shopName, style: TextStyle(color: Colors.white,fontSize: 14, fontWeight: FontWeight.bold))
                     ),
                   )
                 ]

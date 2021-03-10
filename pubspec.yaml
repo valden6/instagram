@@ -54,18 +54,29 @@ flutter:
     - assets/icon.png
     - assets/logo.png
     - assets/logo-white.png
-    - assets/post-content.jpg
-    - assets/search-content.jpg
-    - assets/story-content-account.jpg
+    - assets/post-content-1.jpg
+    - assets/post-content-2.jpg
+    - assets/post-content-3.jpg
+    - assets/search-content-1.jpg
+    - assets/search-content-2.jpg
+    - assets/story-content-account-1.jpg
+    - assets/story-content-account-2.jpg
     - assets/shop-category.jpg
-    - assets/shop-logo.jpg
-    - assets/shop-merch.jpg
-    - assets/igtv-post.jpg
-    - assets/reel-post.jpg
+    - assets/explore-guides.jpg
+    - assets/shop-logo-1.jpg
+    - assets/shop-logo-2.jpg
+    - assets/shop-merch-1.jpg
+    - assets/shop-merch-2.jpg
+    - assets/igtv-post-1.jpg
+    - assets/igtv-post-2.jpg
+    - assets/reel-post-1.jpg
+    - assets/reel-post-2.jpg
     - assets/reel-account-icon.jpg
     - assets/reel-video.mp4
-    - assets/identified-post.jpg
-    - assets/pin-story.jpg
+    - assets/identified-post-1.jpg
+    - assets/identified-post-2.jpg
+    - assets/pin-story-1.jpg
+    - assets/pin-story-2.jpg
     - assets/pp.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see

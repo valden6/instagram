@@ -15,6 +15,9 @@ class _SearchCategoryState extends State<SearchCategory> {
         physics: BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
+
+          String category = (index % 3 == 0) ? "Travel" : "Shop";
+                
           return Container(
             padding: EdgeInsets.only(top: 10, left: 10, bottom: 10),
             child: FlatButton(
@@ -24,7 +27,7 @@ class _SearchCategoryState extends State<SearchCategory> {
                 borderRadius: BorderRadius.circular(10),
                 side: BorderSide(color: Colors.grey)
               ),
-              child: Text("Travel", style: TextStyle(color: Colors.white,fontSize: 16, fontWeight: FontWeight.bold))
+              child: Text(category, style: TextStyle(color: Colors.white,fontSize: 16, fontWeight: FontWeight.bold))
             )
           );
         }

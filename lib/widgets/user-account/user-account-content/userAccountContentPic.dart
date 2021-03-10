@@ -10,12 +10,15 @@ class UserAccountContentPic extends StatelessWidget {
         itemCount: 14,
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int index) {
+          
+          String userImg = (index % 3 == 0) ? "assets/post-content-1.jpg" : "assets/post-content-3.jpg";
+
           return Card(
             margin: EdgeInsets.all(1),
             color: Colors.transparent,
             child: FittedBox(
-                fit: BoxFit.cover,
-                child: Image.asset("assets/post-content.jpg")
+                fit: BoxFit.fill,
+                child: Image.asset(userImg)
             )
           );
         }

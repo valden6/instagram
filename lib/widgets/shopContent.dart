@@ -19,6 +19,12 @@ class _ShopContentState extends State<ShopContent> {
           itemCount: 10,
           shrinkWrap: true,
           itemBuilder: (BuildContext context, int index) {
+
+            String shopPp = (index % 3 == 0) ? "assets/shop-logo-1.jpg" : "assets/shop-logo-2.jpg";
+            String shopName = (index % 3 == 0) ? "Z8.official" : "Reyas.shop";
+            String shopPic = (index % 3 == 0) ? "assets/shop-merch-1.jpg" : "assets/shop-merch-2.jpg";
+            String shopDesc = (index % 3 == 0) ? "Shirt home 2020" : "Shirt Summer Collection";
+                
             return Container(
               margin: EdgeInsets.all(4),
               child: Column(
@@ -31,7 +37,7 @@ class _ShopContentState extends State<ShopContent> {
                           child: Container(
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/shop-merch.jpg"),
+                                image: AssetImage(shopPic),
                                 fit: BoxFit.fill
                               )
                             )
@@ -52,7 +58,7 @@ class _ShopContentState extends State<ShopContent> {
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(30),
                                       image: DecorationImage(
-                                        image: AssetImage("assets/shop-logo.jpg"),
+                                        image: AssetImage(shopPp),
                                         fit: BoxFit.fill
                                       )
                                     )
@@ -61,7 +67,7 @@ class _ShopContentState extends State<ShopContent> {
                                 Padding(padding: EdgeInsets.only(right: 8)),
                                 Expanded(
                                   flex: 8,
-                                  child: Text("z8.official", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold))
+                                  child: Text(shopName, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold))
                                 )
                               ]
                             )
@@ -75,7 +81,7 @@ class _ShopContentState extends State<ShopContent> {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                       padding: EdgeInsets.only(left: 10, right: 10),
-                      child: Text("Shirt home 2020", textAlign: TextAlign.start ,style: TextStyle(color: Colors.white)),
+                      child: Text(shopDesc, textAlign: TextAlign.start ,style: TextStyle(color: Colors.white)),
                     ))
                 ],
               )

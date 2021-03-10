@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class UserContentHeader extends StatelessWidget {
+
+  String userPp;
+  String userName;
+  String userLocation;
+
+  UserContentHeader({this.userPp, this.userName, this.userLocation});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,14 +20,14 @@ class UserContentHeader extends StatelessWidget {
               child: Row(
                 children: [
                   Padding(padding: EdgeInsets.only(left:10)),
-                  CircleAvatar(backgroundImage: AssetImage('assets/pp.jpg')),
+                  CircleAvatar(backgroundImage: AssetImage(userPp)),
                   Padding(padding: EdgeInsets.only(left:10)),
                   Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("EricMatt", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                        Text("Montana", style: TextStyle(color: Colors.white, fontSize: 12))
+                        Text(userName, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                        Text(userLocation, style: TextStyle(color: Colors.white, fontSize: 12))
                       ]
                     )
                   )

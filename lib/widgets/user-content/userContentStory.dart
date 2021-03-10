@@ -22,6 +22,10 @@ class _UserContentStoryState extends State<UserContentStory> {
               scrollDirection: Axis.horizontal,
               itemBuilder: (BuildContext context, int index) {
                 
+                String userName = (index % 3 == 0) ? "Silvia Doe" : "John Deaux";
+                Color color = (index % 3 == 0) ? Colors.red : Colors.black;
+                String userImg = (index % 3 == 0) ? "assets/story-content-account-1.jpg" : "assets/story-content-account-2.jpg";
+                      
                 if (index == 0){
                   return Padding(
                     padding: EdgeInsets.only(left: 10),
@@ -85,16 +89,16 @@ class _UserContentStoryState extends State<UserContentStory> {
                         border: Border.all(
                           width: 4.0,
                           style:BorderStyle.solid ,
-                          color: Colors.red
+                          color: color
                         ),
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/story-content-account.jpg")
+                          image: AssetImage(userImg)
                         )
                       )
                     ),
                     Padding(padding: EdgeInsets.only(top: 4)),
-                    Text("Silvia Doe", style: TextStyle(color: Colors.white),)
+                    Text(userName, style: TextStyle(color: Colors.white),)
                   ]
                 );
               }
