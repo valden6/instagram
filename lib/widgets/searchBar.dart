@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:instagram/animations/heroRoute.dart';
+import 'package:instagram/screens/scanQrCodeScreen.dart';
 
 class SearchBar extends StatelessWidget {
   @override
@@ -36,10 +38,14 @@ class SearchBar extends StatelessWidget {
             )
           ),
           Padding(padding: EdgeInsets.only(left:10)),
-          Expanded(
-            flex: 1,
-            child: FaIcon(FontAwesomeIcons.qrcode, color: Colors.white)
-          )
+          GestureDetector(
+            onTap: () => Navigator.push(context, HeroRoute(page: ScanQrCodeScreen())),
+            child: Expanded(
+              flex: 1,
+              child: FaIcon(FontAwesomeIcons.qrcode, color: Colors.white)
+            )
+          ),
+          Padding(padding: EdgeInsets.only(left:10))
         ]
       )
     );

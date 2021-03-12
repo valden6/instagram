@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class UserContentLegend extends StatelessWidget {
 
-  String userPicLegend;
+  final String userPicLegend;
 
   UserContentLegend({this.userPicLegend});
 

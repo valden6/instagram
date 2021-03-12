@@ -3,9 +3,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class UserContentHeader extends StatelessWidget {
 
-  String userPp;
-  String userName;
-  String userLocation;
+  final String userPp;
+  final String userName;
+  final String userLocation;
 
   UserContentHeader({this.userPp, this.userName, this.userLocation});
 

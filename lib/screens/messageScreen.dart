@@ -26,7 +26,10 @@ class _MessageScreenState extends State<MessageScreen> {
                 child: Container(
                   child: Row(
                     children: [
-                      FaIcon(FontAwesomeIcons.chevronLeft),
+                      GestureDetector(
+                        onTap: () => Navigator.pop(context),
+                        child: FaIcon(FontAwesomeIcons.chevronLeft)
+                      ),
                       Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
                       Text("EricMatt",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25)),
                       Padding(padding: EdgeInsets.symmetric(horizontal: 3)),

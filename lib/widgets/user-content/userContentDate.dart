@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class UserContentDate extends StatelessWidget {
 
-  String userDate;
+  final String userDate;
 
   UserContentDate({this.userDate});
 

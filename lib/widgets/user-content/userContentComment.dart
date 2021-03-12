@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class UserContentComment extends StatelessWidget {
   
-  String userFriend1;
-  String userFriend2;
+  final String userFriend1;
+  final String userFriend2;
 
   UserContentComment({this.userFriend1,this.userFriend2});
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class UserContent extends StatelessWidget {
 
-  String userPic;
+  final String userPic;
 
   UserContent({this.userPic});
 

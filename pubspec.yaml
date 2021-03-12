@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
   font_awesome_flutter: ^8.10.0
   video_player: ^1.0.1
+  camera: ^0.8.0
   cupertino_icons: ^1.0.0
 
 dev_dependencies:
@@ -82,6 +83,7 @@ flutter:
     - assets/friend-2.jpg
     - assets/stranger-1.jpg
     - assets/stranger-2.jpg
+    - assets/emoji-qrcode.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
