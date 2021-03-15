@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram/animations/slideLeftRoute.dart';
+import 'package:instagram/screens/activityScreen.dart';
 import 'package:instagram/screens/messageScreen.dart';
 import 'package:instagram/widgets/user-content/userContent.dart';
 import 'package:instagram/widgets/user-content/userContentActions.dart';
@@ -28,7 +29,7 @@ class HomeScreen extends StatelessWidget {
             icon: FaIcon(FontAwesomeIcons.plusSquare, size:22, color: Colors.white)
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () => Navigator.push(context, SlideLeftRoute(page: ActivityScreen())),
             icon: FaIcon(FontAwesomeIcons.heart, size:22, color: Colors.white)
           ),
           IconButton(

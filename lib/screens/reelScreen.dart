@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram/widgets/reelActions.dart';
 import 'package:instagram/widgets/reelContentAccount.dart';
 import 'package:instagram/widgets/reelContentAudio.dart';
@@ -55,23 +56,41 @@ class _ReelScreenState extends State<ReelScreen> {
                 top: MediaQuery.of(context).size.height/40 * 3,
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  child: Center(child: Text("Reels", style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold)))
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 9,
+                        child: Container(
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 20),
+                            child: Text("Reels", style: TextStyle(color: Colors.white, fontSize: 25,fontWeight: FontWeight.bold))
+                          )
+                        )
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          child: FaIcon(FontAwesomeIcons.camera,color: Colors.white)
+                        )
+                      )
+                    ]
+                  )
                 )
               ),
               Positioned(
-                right: MediaQuery.of(context).size.width/40,
+                top: MediaQuery.of(context).size.height/40 * 34,
                 child: ReelActions()
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height/40 * 29,
+                top: MediaQuery.of(context).size.height/40 * 28,
                 child: ReelContentAccount()
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height/40 * 32,
+                top: MediaQuery.of(context).size.height/40 * 30,
                 child: ReelContentDesc()
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height/40 * 35,
+                top: MediaQuery.of(context).size.height/40 * 32,
                 child: ReelContentAudio()
               )
             ]

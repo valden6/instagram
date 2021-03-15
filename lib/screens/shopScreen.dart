@@ -29,6 +29,10 @@ class _ShopScreenState extends State<ShopScreen> {
                         centerTitle: false,
                         title: Text("Shop", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
                         actions: [
+                           IconButton(
+                            onPressed: () {},
+                            icon: FaIcon(FontAwesomeIcons.bookmark, size:22, color: Colors.white)
+                          ),
                           IconButton(
                             onPressed: () {},
                             icon: FaIcon(FontAwesomeIcons.bars, size:22, color: Colors.white)

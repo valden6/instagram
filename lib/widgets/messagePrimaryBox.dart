@@ -5,10 +5,7 @@ class MessagePrimaryBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: ListView.separated(
-        separatorBuilder: (context, index) => Divider(
-          color: Colors.black26,
-        ),
+      child: ListView.builder(
         shrinkWrap: true,
         itemCount: 15,
         itemBuilder: (BuildContext context, int index) {

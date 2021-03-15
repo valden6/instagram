@@ -13,7 +13,7 @@ class _SearchContentState extends State<SearchContent> {
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
           physics: NeverScrollableScrollPhysics(),
-          itemCount: 16,
+          itemCount: 18,
           shrinkWrap: true,
           itemBuilder: (BuildContext context, int index) {
 
@@ -30,7 +30,7 @@ class _SearchContentState extends State<SearchContent> {
             );
           }
         )
-      ),
+      )
     );
   }
 }

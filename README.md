@@ -3,6 +3,9 @@ An application with the 2020 dark mode design of the famous instagram app.
 
 ## Version
 ### [1.8.0] 
+Design update + Adding activity screen
+
+### [1.8.0] 
 Adding scan qr code screen + Minor bug fixes + Adding hero animation + Adding fade transition
 
 ### [1.7.0] 
